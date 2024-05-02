@@ -1,0 +1,1 @@
+{"mappings":"AAAA;AAEA,IAAI,MAAM;AAGV,kDAAkD;AAClD,MAAM,YAAY,SAAS,cAAc,CAAC","sources":["src/js/main.js"],"sourcesContent":["\"use strict\";\r\n\r\nlet url = \"\";\r\n\r\n\r\n// Lägg till en referens till felmeddelande-spanet\r\nconst errorSpan = document.getElementById('errorSpan');"],"names":[],"version":3,"file":"index.aa69868b.js.map","sourceRoot":"/__parcel_source_root/"}
