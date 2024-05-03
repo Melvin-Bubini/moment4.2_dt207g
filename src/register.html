@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./pictures/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/scss/main.scss">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="pictures/standardLogo.svg" alt="Logga"></a>
+        <a id="logo-text" href="index.html">
+            <h3>Moment-4</h3>
+        </a>
+    </header>
+
+    <main>
+        <h1>Mina sidor</h1>
+        <span><a href="index.html">Startsida -></a> Registrera</span>
+        <span id="errorSpan" style="display: block;" style="color: red;" ></span>
+        <form id="Form">
+            <h1>Registrera</h1>
+            <label for="register-username">Användarnamn:</label><br>
+            <input type="text" name="register-username" id="register-username"
+                placeholder="Skriv ditt användarnamn..."><br>
+
+            <label for="register-password">Lösenord:</label><br>
+            <input type="password" name="register-password" id="register-password"
+                placeholder="Skriv ditt lösenord..."><br>
+            <button onclick="register()">Registrera</button>
+
+            <span>Har du redan ett konto? <a href="register.html">Klicka här</a></span>
+
+        </form>
+
+
+    </main>
+
+    <footer>
+        <p>@Melvin Bubini, 2024</p>
+    </footer>
+
+    <script src="/src/js/main.js"></script>
+
+</body>
+
+</html>

@@ -168,21 +168,7 @@ main {
   display: flex;
 }
 
-#about {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-  display: flex;
-}
-
-#cvArticle {
-  background-color: #fff;
-  width: 50%;
-  padding: 1em;
-}
-
-#cvForm {
+#Form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -191,7 +177,7 @@ main {
   display: flex;
 }
 
-#cvForm button {
+#Form button {
   background-color: #00cb00;
   border: 2px solid #000;
   margin-top: 0%;
@@ -200,33 +186,13 @@ main {
   line-height: 150%;
 }
 
-#cvForm button:hover {
+#Form button:hover {
   cursor: pointer;
   background-color: #6afd6a;
 }
 
 input {
   width: 30%;
-}
-
-.cv {
-  border: 2px solid #000;
-  margin-top: 1em;
-  padding: 1em;
-}
-
-.cv button {
-  background-color: red;
-  border: 2px solid #000;
-  margin-top: 0%;
-  font-family: sans-serif;
-  font-size: 1em;
-  line-height: 150%;
-}
-
-.cv button:hover {
-  cursor: pointer;
-  background-color: #fa7676;
 }
 
 footer {
@@ -256,26 +222,30 @@ footer p {
     background-color: #9cafaa;
   }
 
-  p, h1, h2, li, ul, .courseplan:hover, span, label, .formRubrik {
+  p, h1, h2, li, ul, span, label {
     color: #000;
   }
 
-  .courseplan {
-    color: #00f;
+  a {
+    color: #6060ff;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  header, footer, nav, .menu-btn {
+  header, footer, .menu-btn {
     background-color: #21d0a2;
   }
 
-  body, .cv {
+  body {
     background-color: #394643;
   }
 
-  p, h1, h2, li, ul, .courseplan:hover, span, label, .formRubrik {
+  p, h1, h2, li, ul, span, label {
     color: #fcfcfc;
+  }
+
+  a {
+    color: #6060ff;
   }
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

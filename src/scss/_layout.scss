@@ -180,18 +180,8 @@ main {
     @include base.center-element;
 }
 
-#about {
-    @include base.center-element;
-    padding: 1em;
-}
 
-#cvArticle {
-    width: 50%;
-    background-color: white;
-    padding: 1em;
-}
-
-#cvForm {
+#Form {
     width: 100%;
     @include base.center-element;
     margin-top: 1em;
@@ -212,22 +202,6 @@ input {
     width: 30%;
 }
 
-.cv {
-    border: 2px solid black;
-    padding: 1em;
-    margin-top: 1em;
-
-    button {
-        background-color: red;
-        border: 2px solid black;
-        @include base.p-styles;
-    }
-
-    button:hover {
-        background-color: rgb(250, 118, 118);
-        cursor: pointer;
-    }
-}
 
 
 // Footer
@@ -268,28 +242,26 @@ footer p {
     h2,
     li,
     ul,
-    .courseplan:hover,
     span,
-    label,
-    .formRubrik {
+    label {
         color: base.$text-color;
     }
 
-    .courseplan {
+    a {
         color: base.$link-color;
     }
+
 }
 
 @media (prefers-color-scheme: dark) {
 
     header,
     footer,
-    nav,
     .menu-btn {
         background-color: base.$main-color-dark;
     }
 
-    body, .cv {
+    body {
         background-color: base.$background-color-dark;
     }
 
@@ -298,10 +270,12 @@ footer p {
     h2,
     li,
     ul,
-    .courseplan:hover,
     span,
-    label,
-    .formRubrik {
+    label {
         color: base.$text-color-dark;
+    }
+
+    a {
+        color: base.$link-color;
     }
 }
