@@ -18,9 +18,12 @@
     </header>
 
     <main>
-        <h1>Mina sidor</h1>
-        <span><a href="index.html">Startsida -></a> Registrera</span>
-        <span id="errorSpan" style="display: block;" style="color: red;" ></span>
+        <div>
+            <h3><a href="index.html">Startsida -></a> Registrera</h3>
+        </div>
+
+        <span id="errorSpan" style="color: red;"></span>
+        <span id="successSpan" style="color: rgb(0, 255, 0);"></span>
         <form id="Form">
             <h1>Registrera</h1>
             <label for="register-username">Användarnamn:</label><br>
@@ -30,9 +33,9 @@
             <label for="register-password">Lösenord:</label><br>
             <input type="password" name="register-password" id="register-password"
                 placeholder="Skriv ditt lösenord..."><br>
-            <button onclick="register()">Registrera</button>
+            <button onclick="register()">Registrera</button><br>
 
-            <span>Har du redan ett konto? <a href="register.html">Klicka här</a></span>
+            <span>Har du redan ett konto? <a href="login.html">Klicka här</a></span>
 
         </form>
 

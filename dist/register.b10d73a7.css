@@ -168,18 +168,6 @@ main {
   display: flex;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
-#imgContainer {
-  width: 20%;
-}
-
-#imgContainer img {
-  width: 100%;
-}
-
 #Form {
   flex-direction: column;
   justify-content: center;
@@ -234,7 +222,7 @@ footer p {
     background-color: #9cafaa;
   }
 
-  p, h1, h2, h3, li, ul, span, label {
+  p, h1, h2, li, ul, span, label {
     color: #000;
   }
 
@@ -252,7 +240,7 @@ footer p {
     background-color: #394643;
   }
 
-  p, h1, h2, h3, li, ul, span, label {
+  p, h1, h2, li, ul, span, label {
     color: #fcfcfc;
   }
 
@@ -260,4 +248,4 @@ footer p {
     color: #6060ff;
   }
 }
-/*# sourceMappingURL=index.b10d73a7.css.map */
+/*# sourceMappingURL=register.b10d73a7.css.map */

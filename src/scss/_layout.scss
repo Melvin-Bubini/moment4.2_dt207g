@@ -180,6 +180,17 @@ main {
     @include base.center-element;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+#imgContainer {
+    width: 20%;
+
+    img {
+        width: 100%;
+    }
+}
 
 #Form {
     width: 100%;
@@ -240,6 +251,7 @@ footer p {
     p,
     h1,
     h2,
+    h3,
     li,
     ul,
     span,
@@ -268,6 +280,7 @@ footer p {
     p,
     h1,
     h2,
+    h3,
     li,
     ul,
     span,
@@ -278,4 +291,5 @@ footer p {
     a {
         color: base.$link-color;
     }
+   
 }
