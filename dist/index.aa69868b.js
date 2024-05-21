@@ -42,10 +42,10 @@ async function register() {
 async function login() {
     const loginForm = document.getElementById("Form");
     const errorSpan = document.getElementById("errorSpan");
-    const username = document.getElementById("login-username").value;
-    const password = document.getElementById("login-password").value;
     loginForm.addEventListener("submit", async (event)=>{
         event.preventDefault();
+        const username = document.getElementById("login-username").value;
+        const password = document.getElementById("login-password").value;
         // Kontrollera om användarnamn eller lösenord är tomma
         if (!username || !password) {
             errorSpan.textContent = "Anv\xe4ndarnamn och l\xf6senord m\xe5ste anges";
@@ -63,9 +63,10 @@ async function login() {
                 })
             });
             const data = await response.json();
+            console.log(data); // Lägg till denna rad för att se vad som kommer tillbaka från servern
             if (response.ok) {
                 // spara JWT token i sessionStorage
-                sessionStorage.setItem("jwtToken", data.token);
+                sessionStorage.setItem("jwtToken", data.response.token);
                 window.location.href = "/secret.html"; // ändra till secret.html
             } else {
                 console.error(data.error);
